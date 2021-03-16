@@ -129,4 +129,4 @@ public List<CharacterConnection> FindConnections(List<Character> pastedCharacter
 }
 ```
 ## Alliances
-Alliances are a whole different beast and I am yet to dream up an efficient way to calculate those. I know it will involve pulling the alliance history for every corp in every players history but then building a timeline and matching it all up is way over my head. This is an ongoing project though and I am confident I will figure it out some day!
+Alliances are a whole different beast and I am yet to dream up an efficient way to calculate those. I know it will involve pulling the alliance history for every corp in every players history but then building a timeline and matching it all up is way over my head. This is an ongoing project though and I am confident I will figure it out some day.
