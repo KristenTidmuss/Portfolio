@@ -1,7 +1,7 @@
 ---
 author: "Kristen Tidmuss"
 title: "CorpMates"
-date: "2020-02-11"
+date: "2021-02-11"
 description: "An EvE Online tool to find characters with similar corp history"
 tags: ["EvE Online", "C#", "MVC"]
 draft: false
@@ -100,7 +100,7 @@ public List<CharacterConnection> FindConnections(List<Character> pastedCharacter
 {
     var Connections = new List<CharacterConnection>();
     //Define rookie corps to ignore
-    var rookieCorps = new string[] { "Hedion University", "Imperial Academy", "Royal Amarr Institute", "School of Applied Knowledge", "Science and Trade Institute", "State War Academy", "Center for Advanced Studies", "Federal Navy Academy", "University of Caille", "Pator Tech School", "Republic Military School", "Republic University", "Viziam", "Ministry of War", "Imperial Shipment", "Perkone", "Caldari Provisions", "Deep Core Mining Inc.", "The Scope", "Aliastra", "Garoun Investment Bank", "Brutor Tribe", "Sebiestor Tribe", "Native Freshfood", "Ministry of Internal Order", "Expert Distribution", "Impetus", "Brutor Tribe", "Amarr Imperial Navy", "Ytiri", "Federal Intelligence Office", "Republic Security Services", "Dominations", "Guristas"};
+    var rookieCorps = new string[] { "List of rookie corps goes here"};
     //Loop Chars corp history
     foreach (var corp in this.Corps.Where(c => !rookieCorps.Contains(c.corpName)))
     {
