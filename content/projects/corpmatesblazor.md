@@ -1,17 +1,20 @@
 ---
-author: "Kristen Tidmuss"
-title: "CorpMates - Blazor"
+ShowToc: true
+author: Kristen Tidmuss
+cover:
+  alt: <alt text>
+  hidden: true
+  image: <img>
+  relative: false
 date: "2021-03-25"
-description: "Upgrading the corp mates app to run on Blazor"
-tags: ["EvE Online", "C#", "Blazor"]
+description: Upgrading the corp mates app to run on Blazor
 draft: false
 hideMeta: false
-ShowToc: true
-cover:
-    image: "<img>" # image path/url
-    alt: "<alt text>" # alt text
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+tags:
+- EvE Online
+- C#
+- Blazor
+title: CorpMates - Blazor
 ---
 [![GitHub](/images/github.png)](https://github.com/KristenTidmuss/CorpMates)
 

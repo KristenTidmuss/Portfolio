@@ -1,0 +1,72 @@
+baseURL: 'https://KristenTidmuss.dev'
+languageCode: en-us
+title: Kristen Tidmuss
+theme: PaperModTheme
+enableRobotsTXT: true
+minify:
+    disableXML: true
+    minifyOutput: true
+params:
+  env: production
+
+  title: Kristen Tidmuss
+  description: Personal portfolio for Kristen Tidmuss
+  keywords: [ Portfolio, Blog, Developer]
+  author: Kristen Tidmuss
+  images: /images/avatar/Avatar-Color-NoBG.png
+
+  defaultTheme: dark
+  disableThemeToggle: true
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  
+  profileMode:
+    enabled: true
+    title: Kristen Tidmuss
+    imageUrl: /images/avatar/Avatar-Color-NoBG.png
+    imageTitle: Kristen Tidmuss
+    imageWidth: 256
+    imageHeight: 256
+    buttons:
+      - name: About
+        url: /about
+      - name: Projects
+        url: /projects
+  
+  socialIcons:
+    - name: GitHub
+      url: 'https://github.com/KristenTidmuss'
+    - name: LinkedIn
+      url: 'https://www.linkedin.com/in/kristen-tidmuss-116ab8105/'
+    - name : Email
+      url: 'mailto:kristen@tidmuss.uk'
+
+  assets:
+    favicon: 'https://kristentidmuss.dev/favicon.ico'
+    favicon16x16: 'https://kristentidmuss.dev/favicon-16x16.png'
+    favicon32x32: 'https://kristentidmuss.dev/favicon-32x32.png'
+    apple_touch_icon: 'https://kristentidmuss.dev/apple-touch-icon.png'
+
+menu:
+    main:
+        - identifier: Home
+          name: Home
+          url: /
+          weight: 10
+        - identifier: About
+          name: About
+          url: /About/
+          weight: 20
+        - identifier: Projects
+          name: Projects
+          url: /Projects/
+          weight: 30

@@ -1,17 +1,20 @@
 ---
-author: "Kristen Tidmuss"
-title: "CorpMates"
+ShowToc: true
+author: Kristen Tidmuss
+cover:
+  alt: <alt text>
+  hidden: true
+  image: <img>
+  relative: false
 date: "2021-02-11"
-description: "An EvE Online tool to find characters with similar corp history"
-tags: ["EvE Online", "C#", "MVC"]
+description: An EvE Online tool to find characters with similar corp history
 draft: false
 hideMeta: false
-ShowToc: true
-cover:
-    image: "<img>" # image path/url
-    alt: "<alt text>" # alt text
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+tags:
+- EvE Online
+- C#
+- MVC
+title: CorpMates
 ---
 [![GitHub](/images/github.png)](https://github.com/KristenTidmuss/CorpMates)
 
