@@ -1,4 +1,3 @@
 # [KristenTidmuss.dev](https://kristentidmuss.dev)
 
-Repository for my portfolio page
-Built using Hugo with the PaperMod theme
+Repository for my portfolio page built using React and NextJS
