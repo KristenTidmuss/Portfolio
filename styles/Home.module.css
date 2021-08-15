@@ -91,6 +91,33 @@
     width: 400px;
     margin-left: 20px;
     box-shadow: 0 0rem 0.5rem darkgrey!important;
+    position: relative;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #303030;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.workCardImage{
+    border-top-left-radius: -webkit-calc(.25rem - 1px);
+    border-top-left-radius: -moz-calc(.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: -webkit-calc(.25rem - 1px);
+    border-top-right-radius: -moz-calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    width: 100%;
+    vertical-align: middle;
+}
+.workCardBody{
+    -moz-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 1rem;
 }
 .workLinks{
     height: 30px;

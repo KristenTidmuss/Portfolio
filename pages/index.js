@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import Card from 'react-bootstrap/Card'
 import styles from '../styles/Home.module.css'
 import Layout, { siteTitle } from '../components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
+import Image from 'next/image'
 import Fade from 'react-reveal/Fade';
 export default function Home() {
     return (
@@ -25,7 +25,12 @@ export default function Home() {
 
                         </section>
                         <section className={styles.titleFloatRight}>
-                            <img src='/images/Avatar-Color-NoBG.png'/>
+                            <Image
+                                src="/images/Avatar-Color-NoBG.png"
+                                alt="Picture of the author"
+                                width={300}
+                                height={300}
+                            />
                         </section>
                     </section>
                 </Fade>
@@ -115,18 +120,21 @@ export default function Home() {
                     <section>
                         <h3 className={styles.workTitle}>My Work</h3>
                         <section className={styles.work}>
-                            <Card className={styles.workCard}>
-                                <Card.Img variant="top" src="/images/whom.jpg" />
-                                <Card.Body>
-                                    <Card.Title>EvE Whom</Card.Title>
-                                    <Card.Text>
-                                        A small WebAssembly app which takes a characters name from EvE online and a list of other characters,
-                                        it then compares their in-game group history via the API to find common groups
-                                    </Card.Text>
+                            <section className={styles.workCard}>
+                                <Image
+                                    src="/images/whom.jpg"
+                                    alt="Picture of Whom in action"
+                                    width={400}
+                                    height={400}
+                                    className={styles.workCardImage}
+                                />
+                                <section className={styles.workCardBody}>
+                                    <h5>EvE Whom</h5>
+                                    <p>A small WebAssembly app which takes a characters name from EvE online and a list of other characters,
+                                        it then compares their in-game group history via the API to find common groups</p>
                                     More Details: <a href={"https://github.com/KristenTidmuss/EvE-Whom"}><FontAwesomeIcon icon={['fab','github']} className={styles.workLinks}></FontAwesomeIcon></a>
-                                </Card.Body>
-                            </Card>
-
+                                </section>
+                            </section>
                         </section>
                     </section>
                 </Fade>
