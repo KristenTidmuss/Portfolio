@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 import Image from 'next/image'
 import { Fade } from "react-awesome-reveal";
+import Typewriter from 'typewriter-effect';
 export default function Home() {
     return (
         <Layout home>
@@ -18,11 +19,18 @@ export default function Home() {
                         <div className={styles.titleFloatLeft}>
                             <h5 className={styles.titleGreeting}>Hi there, I am</h5>
                             <h1>Kristen Tidmuss</h1>
-                            <h3 className={styles.titleJob}>Developer</h3>
+                            <h3 className={styles.titleJob}>
+                                <Typewriter
+                                    options={{
+                                        strings: ['Developer', 'Tinkerer', 'Troubleshooter'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </h3>
                             <a href={"https://github.com/KristenTidmuss/"}><FontAwesomeIcon icon={['fab','github']} className={styles.titleLinks}></FontAwesomeIcon></a>
                             <a href={"https://www.linkedin.com/in/kristen-tidmuss-116ab8105/"}><FontAwesomeIcon icon={['fab','linkedin']} className={styles.titleLinks}></FontAwesomeIcon></a>
                             <a href={"mailto:kristen.tidmuss@outlook.com?subject=Web%20Enquiry%3A"}><FontAwesomeIcon icon='envelope' className={styles.titleLinks}></FontAwesomeIcon></a>
-
                         </div>
                         <div className={styles.titleFloatRight}>
                             <Image
