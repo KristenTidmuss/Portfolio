@@ -5,17 +5,17 @@ import Layout, { siteTitle } from '../components/layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react';
 import Image from 'next/image'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 export default function Home() {
     return (
         <Layout home>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <section className={styles.page}>
-                <Fade top>
-                    <section className={styles.titleSection}>
-                        <section className={styles.titleFloatLeft}>
+            <div className={styles.page}>
+                <Fade triggerOnce>
+                    <div className={styles.titleSection}>
+                        <div className={styles.titleFloatLeft}>
                             <h5 className={styles.titleGreeting}>Hi there, I am</h5>
                             <h1>Kristen Tidmuss</h1>
                             <h3 className={styles.titleJob}>Developer</h3>
@@ -23,28 +23,28 @@ export default function Home() {
                             <a href={"https://www.linkedin.com/in/kristen-tidmuss-116ab8105/"}><FontAwesomeIcon icon={['fab','linkedin']} className={styles.titleLinks}></FontAwesomeIcon></a>
                             <a href={"mailto:kristen.tidmuss@outlook.com?subject=Web%20Enquiry%3A"}><FontAwesomeIcon icon='envelope' className={styles.titleLinks}></FontAwesomeIcon></a>
 
-                        </section>
-                        <section className={styles.titleFloatRight}>
+                        </div>
+                        <div className={styles.titleFloatRight}>
                             <Image
                                 src="/images/Avatar-Color-NoBG.png"
                                 alt="Picture of the author"
                                 width={300}
                                 height={300}
                             />
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </Fade>
-                <Fade top>
-                    <section>
+                <Fade triggerOnce>
+                    <div>
                         <h3 className={styles.aboutMeTitle}>About Me</h3>
-                        <section className={styles.aboutMe}>
-                            <section className={styles.aboutFloatLeft}>
+                        <div className={styles.aboutMe}>
+                            <div className={styles.aboutFloatLeft}>
                                 <p>I am a 24 year old software developer currently living in Nottingham, UK.
                                     For the last 6 years I have been working for Quotient Sciences in Ruddington under many job roles.
                                     Most recently as an IT Application Support Analyst.
                                     Currently I am studying at Nottingham Trent University working towards a degree in software development along side my full time job.</p>
-                            </section>
-                            <section className={styles.aboutFloatRight}>
+                            </div>
+                            <div className={styles.aboutFloatRight}>
                                 C#
                                 <ProgressBar now={95} className={styles.aboutSkillBar} />
                                 SQL
@@ -59,17 +59,17 @@ export default function Home() {
                                 <ProgressBar now={75} className={styles.aboutSkillBar} />
                                 React
                                 <ProgressBar now={60} className={styles.aboutSkillBar} />
-                            </section>
-                        </section>
-                    </section>
+                            </div>
+                        </div>
+                    </div>
                 </Fade>
-                <Fade top>
-                    <section>
+                <Fade triggerOnce>
+                    <div>
                         <h3 className={styles.experienceTitle}>My Experience</h3>
-                        <section className={styles.experience}>
+                        <div className={styles.experience}>
                             <b>Quotient Sciences: IT Application Support Analyst</b>
                             <p>2014 - Present</p>
-                            <section className={styles.experienceDescription}>
+                            <div className={styles.experienceDescription}>
                                 <u>The Company</u>
                                 <p>
                                     Quotient Sciences is a drug development and manufacturing accelerator supporting customers from candidate selection to commercial launch.
@@ -87,40 +87,40 @@ export default function Home() {
                                         <li>Support end users in accordance with KPIs</li>
                                     </ul>
                                 </p>
-                            </section>
-                        </section>
-                    </section>
+                            </div>
+                        </div>
+                    </div>
                 </Fade>
-                <Fade top>
-                    <section>
+                <Fade triggerOnce>
+                    <div>
                         <h3 className={styles.educationTitle}>My Education</h3>
-                        <section className={styles.education}>
+                        <div className={styles.education}>
                             <b>Digital and Technology Solutions Professional (Software Engineering)</b><br/>
                             Nottingham Trent University<br/>
                             2020 - 2024
-                        </section>
-                        <section className={styles.education}>
+                        </div>
+                        <div className={styles.education}>
                             <b>Microsoft Technology Associate: Database Administration (MTA)</b><br/>
                             <span>Microsoft</span><br/>
                             <span>2020</span>
-                        </section>
-                        <section className={styles.education}>
+                        </div>
+                        <div className={styles.education}>
                             <b>BTEC Level 3 Diploma in Professional Competence for IT and Telecoms Professionals (QCF)</b><br/>
                             <span>3AAA Apprenticeships</span><br/>
                             <span>2014 - 2015</span>
-                        </section>
-                        <section className={styles.education}>
+                        </div>
+                        <div className={styles.education}>
                             <b>BTEC Level 3 Extended Diploma in ICT Systems and Principles (QCF)</b><br/>
                             <span>3AAA Apprenticeships</span><br/>
                             <span>2014 - 2015</span>
-                        </section>
-                    </section>
+                        </div>
+                    </div>
                 </Fade>
-                <Fade top>
-                    <section>
+                <Fade triggerOnce>
+                    <div>
                         <h3 className={styles.workTitle}>My Work</h3>
-                        <section className={styles.work}>
-                            <section className={styles.workCard}>
+                        <div className={styles.work}>
+                            <div className={styles.workCard}>
                                 <Image
                                     src="/images/whom.jpg"
                                     alt="Picture of Whom in action"
@@ -128,17 +128,17 @@ export default function Home() {
                                     height={400}
                                     className={styles.workCardImage}
                                 />
-                                <section className={styles.workCardBody}>
+                                <div className={styles.workCardBody}>
                                     <h5>EvE Whom</h5>
                                     <p>A small WebAssembly app which takes a characters name from EvE online and a list of other characters,
                                         it then compares their in-game group history via the API to find common groups</p>
                                     More Details: <a href={"https://github.com/KristenTidmuss/EvE-Whom"}><FontAwesomeIcon icon={['fab','github']} className={styles.workLinks}></FontAwesomeIcon></a>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Fade>
-            </section>
+            </div>
         </Layout>
     )
 }
