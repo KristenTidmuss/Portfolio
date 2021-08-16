@@ -1,3 +1,94 @@
 body{
     user-select: none;
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #222;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: -webkit-calc(1.325rem + .9vw);
+    font-size: -moz-calc(1.325rem + .9vw);
+    font-size: calc(1.325rem + .9vw);
+}
+h5{
+    font-size: 1.25rem;
+}
+h1, h2, h3, h4, h5{
+    margin-top: 0 !important;
+    margin-bottom: .5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+}
+/* Container */
+.container{
+	width: 100%;
+	padding-right: var(--bs-gutter-x, .75rem);
+	padding-left: var(--bs-gutter-x, .75rem);
+	margin-right: auto;
+	margin-left: auto
+}
+@media (min-width:576px) {
+	.container {
+		max-width: 540px
+	}
+}
+@media (min-width:768px) {
+	.container {
+		max-width: 720px
+	}
+}
+@media (min-width:992px) {
+	.container {
+		max-width: 960px
+	}
+}
+@media (min-width:1200px) {
+	.container{
+		max-width: 1140px
+	}
+    h1 {
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+@media (min-width:1400px) {
+	.container{
+		max-width: 1320px
+	}
+}
+/* Progress */
+.progress{
+    display: -moz-box;
+    display: flex;
+    overflow: hidden;
+    height: 1rem;
+    font-size: .75rem;
+    background-color: #444;
+    border-radius: .25rem;
+}
+.progress-bar{
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #375a7f;
+    -webkit-transition: width .6s ease;
+    -moz-transition: width .6s ease;
+    transition: width .6s ease;
+    display: -moz-box;
+    display: flex;
+    overflow: hidden;
 }
