@@ -38,6 +38,7 @@ export default function Home() {
                                 alt="Picture of the author"
                                 width={300}
                                 height={300}
+                                priority={true}
                             />
                         </div>
                     </div>
@@ -135,6 +136,7 @@ export default function Home() {
                                     width={400}
                                     height={400}
                                     className={styles.workCardImage}
+                                    priority={true}
                                 />
                                 <div className={styles.workCardBody}>
                                     <h5>EvE Whom</h5>
